@@ -1,2 +1,5 @@
 # lift-barrage
-Barrage plain-language clone of fitzyracing1/lift
+
+Barrage clone of [fitzyracing1/lift](https://github.com/fitzyracing1/lift).
+
+Read [listing.barrage](listing.barrage).

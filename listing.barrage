@@ -1,0 +1,41 @@
+# Lift
+
+> Treat the open internet, or any one URL, as an ai::Model.
+
+## Purpose
+Explain lift as a way to point at the web and use that page as if it were a model. Source: fitzyracing1/lift.
+
+## How it works (plain English)
+1. Name a URL or the open internet.
+2. Lift that target into the model slot.
+3. Ask the model slot as you would ask a local model.
+4. Keep the C++ interface small.
+
+## Key ideas
+- ai::Model (the named slot a model sits in)
+- Lift (put a URL into that slot)
+- Open internet (the large target when no single URL is named)
+
+## The actual code
+```
+# source: fitzyracing1/lift
+model = lift(url_or_internet)
+ask(model)
+```
+
+## Line-by-line translation
+1. model = lift(...) → “put that web target in the model slot”
+2. ask(model) → “query it like a model”
+
+## Decisions the program makes
+- If a URL is named → lift that page
+- If no URL is named → lift the open internet
+
+## What a person would notice
+A website treated as something you can ask.
+
+## Current status
+Barrage clone.
+
+## Next possible steps
+Open fitzyracing1/lift and point it at one URL.
